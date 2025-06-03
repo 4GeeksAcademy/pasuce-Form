@@ -12,49 +12,49 @@
 </head>
 
 <body>
-    <div class="form">
-        <form class="header-form" method="post">
+    <form class="form">
+        <div class="header-form" method="post">
             <div class="row">
                 <p>Payment form example</p>
             </div>
-         </form>   
+        </div>
 
-            <div class="alert alert-danger" role="alert">
-                Some fields are missing
-            </div>
-        
-        <form class="row mb-3 g-3">
+        <div class="alert alert-danger" role="alert">
+            Some fields are missing
+        </div>
+
+        <div class="row mb-3 g-3">
             <div class="col-5">
                 <label for="numberCard" class="form-label">Card #</label>
-                <input type="text" class="form-control" id="numberCard" placeholder="xxxx xxxx xxxx xxx">
+                <input type="text" class="form-control" id="numberCard" placeholder="xxxx xxxx xxxx xxx" required>
             </div>
             <div class="col-3">
                 <label for="inputCvc" class="form-label">CVC #</label>
-                <input type="text" class="form-control" id="inputCvc" placeholder="123">
+                <input type="text" class="form-control" id="inputCvc" placeholder="123" required>
             </div>
             <div class="col-4">
                 <label for="inputAmount" class="form-label">Amount</label>
-                <input type="text" class="form-control" id="inputAmount" placeholder="Amount">
+                <input type="text" class="form-control" id="inputAmount" placeholder="Amount" required>
             </div>
-        </form>
-        <form class="row mb-3 g-3">
+        </div>
+        <div class="row mb-3 g-3">
             <div class="col-6">
                 <label for="name" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="Name">
+                <input type="text" class="form-control" id="Name" required>
             </div>
             <div class="col-6">
                 <label for="name" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="LastName">
+                <input type="text" class="form-control" id="LastName" required>
             </div>
-        </form>
-        <form class="row  mb-3 g-3">
+        </div>
+        <div class="row  mb-3 g-3">
             <div class="col-6">
                 <label for="name" class="form-label">City</label>
-                <input type="text" class="form-control" id="City">
+                <input type="text" class="form-control" id="City" required>
             </div>
             <div class="col-3">
                 <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
+                <select id="inputState" class="form-select" required>
                     <option selected></option>
                     <option>...</option>
                 </select>
@@ -62,10 +62,10 @@
 
             <div class="col-3">
                 <label for="inputCode" class="form-label">Postal Code</label>
-                <input type="text" class="form-control" id="inputCode">
+                <input type="text" class="form-control" id="inputCode" required>
             </div>
-        </form>
-        <form class="row mb-3 g-3">
+        </div>
+        <div class="row mb-3 g-3">
             <div class="col-6">
                 <p class="text-above">We accept:</p>
                 <div class="check-container">
@@ -106,16 +106,16 @@
                 <small class="text-muted">Add any notes here.</small>
 
             </div>
-        </form>
-        <form class="row mb-3 g-3">
+        </div>
+        <div class="row mb-3 g-3">
             <div class="col-12">
                 <div class="button-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                    <button type="button" class="btn btn-primary">Send</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
                 </div>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
 
 
 
